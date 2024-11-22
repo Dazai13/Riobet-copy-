@@ -76,3 +76,29 @@ document.addEventListener('DOMContentLoaded', () => {
     startAutoPlay();
   });
   
+
+  function updateClassesForMobile() {
+    // Проверяем ширину окна
+    const windowWidth = window.innerWidth;
+    
+    if (windowWidth >= 320 && windowWidth <= 1200) {
+        // Получаем все элементы на странице
+        const allElements = document.querySelectorAll('*');
+
+        allElements.forEach(element => {
+            const classes = element.className;
+
+            if (classes) {
+                const updatedClasses = classes
+                    .split(' ')
+                    .map(className => `${className}__mobile`)
+                    .join(' ');
+
+                element.className = updatedClasses;
+            }
+        });
+    }
+}
+
+// Выполняем при загрузке страницы
+document.addEventListener
