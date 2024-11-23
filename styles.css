@@ -98286,3 +98286,20 @@ td:focus {
   top: -62px;
   pointer-events: none;
 }
+.games-list .game-item {
+  margin: 0 23px 24px 0;
+}
+.game-item_hover {
+  z-index: 2;
+}
+.game-item_hover .game-hover {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 12px;
+  -webkit-tap-highlight-color: transparent;
+  border: 2px solid var(--c-27);
+  opacity: 1;
+  pointer-events: auto;
+}

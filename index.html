@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riobet(copy)</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobily.css">
 </head>
 
 <body>
@@ -791,19 +792,25 @@
                                                             <div class="button__border"></div>
                                                             <div class="button__loader"></div>
                                                             <svg class="icon icon-play_button">
-                                                                <use xlink:href="#play_button"></use>
+                                                                <use xlink:href="#play_button">
+                                                                    <symbol viewBox="0 0 46 51" id="play_button" xmlns="http://www.w3.org/2000/svg"><path d="M43.627 21.995c2.764 1.52 2.764 5.49 0 7.01L5.927 49.74C3.263 51.206 0 49.277 0 46.235V4.765C0 1.723 3.262-.206 5.928 1.26l37.7 20.735z"></path></symbol>
+                                                                </use>
                                                             </svg>
                                                         </button>
                                                     </div>
                                                 </div>
                                                 <div class="game-hover__stats js-show-game-stats">
                                                     <svg class="icon icon-info-popup">
-                                                        <use xlink:href="#info-popup"></use>
+                                                        <use xlink:href="#info-popup">
+                                                            <symbol viewBox="0 0 24 24" id="info-popup" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 3a9 9 0 100 18 9 9 0 000-18zM1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M12 11a1 1 0 011 1v4a1 1 0 11-2 0v-4a1 1 0 011-1zm-1-3a1 1 0 011-1h.01a1 1 0 110 2H12a1 1 0 01-1-1z"></path></symbol>
+                                                        </use>
                                                     </svg>
                                                 </div>
                                                 <div class="game-hover__favorite js-favorite-button">
                                                     <svg class="icon icon-favorite">
-                                                        <use xlink:href="#favorite"></use>
+                                                        <use xlink:href="#favorite">
+                                                            <symbol viewBox="0 0 512.01 448.008" id="favorite" xmlns="http://www.w3.org/2000/svg"><path d="M439.012 52.472c-48.61-41.425-120.906-33.974-165.525 12.064L256.01 82.544l-17.475-18.008c-44.53-46.038-116.914-53.49-165.525-12.064-55.708 47.547-58.635 132.882-8.782 184.42l171.646 177.235c11.088 11.443 29.096 11.443 40.184 0l171.646-177.235c49.942-51.538 47.015-136.873-8.693-184.42z"></path></symbol>
+                                                        </use>
                                                     </svg>
                                                 </div>
                                             </div>
@@ -1531,7 +1538,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="game-item game-item_show-more js-trigger-more" style="width: 259px; height: 174px;">
+                                        <div id = "game-item_none" class="game-item game-item_show-more js-trigger-more" style="width: 259px; height: 174px;">
                                             <div class="game-item_more-button c-pointer js-show-more-cover">
                                                 <span class="f-16">Показать еще
                                                     <svg>
@@ -2008,7 +2015,7 @@
                 </div>
             </div>
         </div>
-    </div>  
+    </div>
     <script src = "slider.js"></script>
     <script src = "modile.js"></script>
 </body>
